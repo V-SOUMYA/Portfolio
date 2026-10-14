@@ -41,10 +41,10 @@
       --tag-bg:     #efefef;
       --tag-text:   #888;
     }
-
+ 
     *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
     html { scroll-behavior: smooth; }
-
+ 
     body {
       font-family: var(--sans);
       background: var(--bg);
@@ -54,7 +54,7 @@
       transition: background 0.4s, color 0.4s;
       overflow-x: hidden;
     }
-
+ 
     /* ─── SCROLL PROGRESS ─── */
     #progress-bar {
       position: fixed; top:0; left:0; height:2px;
@@ -63,7 +63,7 @@
       transition: width 0.1s linear;
       box-shadow: 0 0 8px var(--accent);
     }
-
+ 
     /* ─── NAV ─── */
     .site-nav {
       position: fixed; top:0; left:0; right:0;
@@ -121,7 +121,7 @@
       transition: all 0.2s;
     }
     .theme-btn:hover { color: var(--accent); border-color: var(--accent); }
-
+ 
     /* ─── HERO ─── */
     #hero {
       min-height: 100vh;
@@ -130,7 +130,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     /* Left: text */
     .hero-left {
       display: flex; flex-direction: column;
@@ -170,7 +170,7 @@
       to { opacity:1; transform: translateY(0); }
     }
     .hero-h1 .accent-word { color: var(--accent); }
-
+ 
     .typewriter-wrap {
       font-family: var(--mono); font-size: 13px;
       color: var(--accent2); margin-bottom: 24px;
@@ -184,13 +184,13 @@
       animation: blink 0.9s step-end infinite;
     }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-
+ 
     .hero-bio {
       font-size: 15px; color: var(--body); max-width: 440px;
       line-height: 1.75; margin-bottom: 36px;
       opacity: 0; animation: slideRight 0.6s 1.2s forwards;
     }
-
+ 
     .hero-ctas {
       display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px;
       opacity: 0; animation: slideRight 0.6s 1.35s forwards;
@@ -219,7 +219,7 @@
       transition: all 0.2s;
     }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
-
+ 
     .hero-links {
       display: flex; gap: 20px;
       opacity: 0; animation: slideRight 0.6s 1.5s forwards;
@@ -231,7 +231,7 @@
       transition: color 0.2s;
     }
     .hero-links a:hover { color: var(--accent2); }
-
+ 
     /* Right: animated visual */
     .hero-right {
       position: relative; overflow: hidden;
@@ -264,7 +264,7 @@
       40%      { transform: translate(-25px, 20px); }
       70%      { transform: translate(15px,-15px); }
     }
-
+ 
     /* Grid / code card visual */
     .hero-card {
       position: relative; z-index: 2;
@@ -315,7 +315,7 @@
     .c-num    { color: #f78c6c; }
     .c-cmt    { color: var(--muted); font-style: italic; }
     .c-acc    { color: var(--accent2); }
-
+ 
     /* Stats row below card */
     .hero-stats {
       position: absolute; bottom: 48px; left: 50%;
@@ -336,14 +336,14 @@
       color: var(--muted); letter-spacing: 0.08em;
       text-transform: uppercase; margin-top: 4px;
     }
-
+ 
     /* divider line */
     .hero-divider {
       position: absolute; left: 50%; top: 0; bottom: 0;
       width: 1px; background: var(--border);
       opacity: 0.5;
     }
-
+ 
     /* ─── SHARED SECTION WRAPPER ─── */
     .section-wrap {
       padding: 100px 60px;
@@ -352,7 +352,7 @@
     .section-wrap:nth-child(even) {
       background: var(--surface);
     }
-
+ 
     .section-header {
       display: flex; align-items: baseline;
       gap: 20px; margin-bottom: 56px;
@@ -371,7 +371,7 @@
       flex:1; height: 1px;
       background: linear-gradient(90deg, var(--border), transparent);
     }
-
+ 
     /* ─── SKILLS ─── */
     .skills-layout {
       display: grid;
@@ -412,7 +412,7 @@
       background: var(--accent-dim); color: var(--accent2);
       border-color: transparent;
     }
-
+ 
     /* ─── EXPERIENCE ─── */
     .timeline {
       position: relative;
@@ -458,7 +458,7 @@
       line-height: 1.7; margin-bottom: 12px;
       max-width: 640px;
     }
-
+ 
     /* ─── PROJECTS ─── */
     .projects-grid {
       display: grid;
@@ -519,7 +519,7 @@
       transition: color 0.2s;
     }
     .proj-link:hover { color: var(--accent2); }
-
+ 
     /* ─── EDUCATION ─── */
     .edu-grid {
       display: grid;
@@ -554,7 +554,7 @@
     .edu-year {
       font-family: var(--mono); font-size: 12px; color: var(--muted);
     }
-
+ 
     /* ─── FOOTER ─── */
     .site-footer {
       background: var(--surface);
@@ -565,7 +565,6 @@
       align-items: center;
       flex-wrap: wrap; gap: 20px;
     }
-    
     .footer-avail {
       display: flex; align-items: center; gap: 8px;
       font-family: var(--mono); font-size: 12px;
@@ -588,7 +587,7 @@
       transition: color 0.2s;
     }
     .footer-links a:hover { color: var(--accent2); }
-
+ 
     /* ─── KEYFRAMES ─── */
     @keyframes slideUp {
       from { opacity:0; transform: translateY(20px); }
@@ -602,7 +601,7 @@
       from { opacity:0; }
       to   { opacity:1; }
     }
-
+ 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 900px) {
       #hero { grid-template-columns: 1fr; }
@@ -627,10 +626,10 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- Scroll progress bar -->
 <div id="progress-bar"></div>
-
+ 
 <!-- Nav -->
 <nav class="site-nav" id="siteNav">
   <a class="nav-logo" href="#">
@@ -647,11 +646,11 @@
     <button class="theme-btn" id="themeToggle">Light</button>
   </div>
 </nav>
-
+ 
 <!-- ─── HERO ─── -->
 <section id="hero">
   <div class="hero-divider"></div>
-
+ 
   <!-- Left -->
   <div class="hero-left">
     <p class="hero-eyebrow">ML Engineer · AI Engineer</p>
@@ -660,26 +659,26 @@
       <span class="line"><span>intelligent</span></span>
       <span class="line"><span><em class="accent-word">systems.</em></span></span>
     </h1>
-
+ 
     <div class="typewriter-wrap">
       <span id="tw-text"></span><span class="typewriter-cursor"></span>
     </div>
-
+ 
     <p class="hero-bio">
       MS Computer Science at Rutgers (Dec 2026). Previously built GenAI and automation pipelines at Accenture. Focused on NLP, ML infrastructure, and making models useful in production.
     </p>
-
+ 
     <div class="hero-ctas">
-      <a class="btn-primary" href="https://github.com/V-SOUMYA" target="_blank" rel="noopener">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        GitHub
+      <a class="btn-primary" href="resume.pdf" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Resume
       </a>
       <a class="btn-ghost" href="mailto:soumya.bpr@gmail.com">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         Say hello
       </a>
     </div>
-
+ 
     <div class="hero-links">
       <a href="https://www.linkedin.com/in/soumya-vajahhala/" target="_blank" rel="noopener">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -691,12 +690,12 @@
       </a>
     </div>
   </div>
-
+ 
   <!-- Right: code card visual -->
   <div class="hero-right">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
-
+ 
     <div class="hero-card" id="heroCard">
       <div class="card-bar">
         <span class="card-dot"></span>
@@ -719,7 +718,7 @@
         <span class="code-line">f1_score  = <span class="c-num">0.831</span>  <span class="c-cmt"># ↑ +6.1%</span></span>
       </div>
     </div>
-
+ 
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num" data-count="1">0</div>
@@ -736,7 +735,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── SKILLS ─── -->
 <section class="section-wrap" id="skills">
   <div class="section-header">
@@ -788,7 +787,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── EXPERIENCE ─── -->
 <section class="section-wrap" id="experience">
   <div class="section-header">
@@ -830,7 +829,7 @@ testing of multi-system automation workflows across production environments</p>
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── PROJECTS ─── -->
 <section class="section-wrap" id="projects">
   <div class="section-header">
@@ -995,7 +994,7 @@ testing of multi-system automation workflows across production environments</p>
  
   </div>
 </section>
-
+ 
 <!-- ─── EDUCATION ─── -->
 <section class="section-wrap" id="education">
   <div class="section-header">
@@ -1018,7 +1017,7 @@ testing of multi-system automation workflows across production environments</p>
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── FOOTER ─── -->
 <footer class="site-footer">
   <div class="footer-left">
@@ -1043,7 +1042,7 @@ testing of multi-system automation workflows across production environments</p>
     </a>
   </div>
 </footer>
-
+ 
 <script>
 // ── Theme ──
 const btn = document.getElementById('themeToggle');
@@ -1057,7 +1056,7 @@ btn.addEventListener('click', () => {
   btn.textContent = next === 'dark' ? 'Light' : 'Dark';
   localStorage.setItem('theme', next);
 });
-
+ 
 // ── Scroll progress ──
 const bar = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
@@ -1065,13 +1064,13 @@ window.addEventListener('scroll', () => {
   const pct = (window.scrollY / (h.scrollHeight - h.clientHeight)) * 100;
   bar.style.width = pct + '%';
 }, { passive: true });
-
+ 
 // ── Nav background ──
 const nav = document.getElementById('siteNav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
-
+ 
 // ── Typewriter ──
 const phrases = [
   'NLP & RAG systems',
@@ -1093,14 +1092,14 @@ function typeStep() {
   setTimeout(typeStep, deleting ? 40 : 70);
 }
 setTimeout(typeStep, 1400);
-
+ 
 // ── Code lines stagger animation ──
 const codeLines = document.querySelectorAll('.card-code .code-line');
 codeLines.forEach((line, i) => {
   line.classList.add('reveal');
   line.style.animationDelay = (0.9 + i * 0.07) + 's';
 });
-
+ 
 // ── Count-up stats ──
 function countUp(el) {
   const target = parseInt(el.dataset.count);
@@ -1113,7 +1112,7 @@ function countUp(el) {
   setTimeout(step, 1600);
 }
 document.querySelectorAll('[data-count]').forEach(countUp);
-
+ 
 // ── Scroll-triggered reveals ──
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1133,9 +1132,10 @@ const revealObs = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.12 });
-
+ 
 document.querySelectorAll('.skill-group, .tl-item, .project-card, .edu-card')
   .forEach(el => revealObs.observe(el));
 </script>
 </body>
 </html>
+ 
